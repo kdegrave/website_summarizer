@@ -29,6 +29,9 @@ class Website:
 
 
 class Prompt:
+    """
+    Class to construct system and user prompts for a given website.
+    """
 
     def __init__(self, website):
         self.website = website
@@ -54,6 +57,9 @@ If it includes news or announcements, then summarize these too.\n\n"
 
 
 class Model:
+    """
+    Class to call OpenAI API.
+    """
 
     def __init__(self):
         load_dotenv()
